@@ -12,6 +12,7 @@ html{
 
 header{
    background-color: #B4D0E7;
+   margin-bottom: 150px;
 }
 
 a{
@@ -33,13 +34,27 @@ li{
    align-items: center;
 }
 
+
+/* --------------------------------------------------------- */
+/* HEADER NAV */
+
+
 .nav{
    padding: 25px 15px;
    background-color: white;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1;
 }
 
 .nav-item li{
    margin: 0 20px;
+}
+
+.nav-item li:hover{
+   text-decoration: underline;
 }
 
 .btn-small{
@@ -68,8 +83,13 @@ li{
    margin-right: 15px;
 }
 
+
+/* --------------------------------------------------------- */
+/* JUMBOTRON */
+
+
 .jumbotron-container{
-   padding-top: 60px;
+   padding-top: 142px;
    width: 70%;
    margin: 0 auto;
 }
@@ -109,3 +129,79 @@ li{
    bottom: 20px;
    font-size: 3.5rem;
 }
+
+
+/* --------------------------------------------------------- */
+/* PLANS & PRICES */
+
+
+.section{
+   width: 60%;
+   margin: 0 auto;
+}
+
+.title-plans{
+   font-size: 2.5rem;
+}
+
+
+/* --------------------------------------------------------- */
+/* CUSTOM RADIO BUTTON */
+
+
+.billing{
+   position: relative;
+   cursor: pointer;
+   padding: 0 25px;
+}
+
+input{
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.checkmark{
+   position: absolute;
+   top: 2px;
+   left: 0;
+   height: 15px;
+   width: 15px;
+   border: 2px solid #D0D0D3;
+   border-radius: 50%;
+}
+
+.billing:hover input ~ .checkmark{
+   border: 4px solid #0061FF;
+   border-radius: 50%;
+}
+
+.billing input:checked ~ .checkmark{
+   border: 4px solid #0061FF;
+   border-radius: 50%;
+}
+
+.checkmark:after {
+   content: "";
+   position: absolute;
+   display: none;
+}
+
+.billing input:checked ~ .checkmark:after {
+   display: block;
+}
+
+.billing .checkmark:after {
+   top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.select-billing{
+   margin: 50px 0;
+}
+
+/* --------------------------------------------------------- */
