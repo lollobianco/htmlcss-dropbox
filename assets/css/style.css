@@ -14,14 +14,17 @@ header{
    background-color: #B4D0E7;
    margin-bottom: 150px;
 }
-
-a{
+.nav a{
    text-decoration: none;
    color: black;
 }
 
 li{
    list-style: none;
+}
+
+.fa-check{
+   color: #0061FF;
 }
 
 .space-between{
@@ -144,6 +147,74 @@ li{
    font-size: 2.5rem;
 }
 
+.plan{
+   flex-basis: 30%;
+   border: 1px solid lightgray;
+   margin-bottom: 60px;
+}
+
+.plan-type{
+   text-align: center;
+   border-bottom: 1px solid lightgray;
+   padding: 10px 0;
+}
+
+.plan-ico{
+   margin-right: 5px;
+}
+
+.description{
+   padding: 40px 40px;
+}
+
+.description h3{
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+.price{
+   margin-bottom: 15px;
+}
+
+.recurrence{
+   margin-bottom: 40px;
+}
+
+.plan-info{
+   margin-bottom: 15px;
+}
+
+.info-container{
+   display: flex;
+}
+
+i{
+   padding-top: 3px;
+}
+
+.description button{
+   width: 100%;
+   margin-top: 40px;
+   margin-bottom: 30px;
+}
+
+.plan a{
+   color: blue;
+}
+
+.buy-now{
+   margin-bottom: 40px;
+}
+
+.line{
+   border-top: 2px solid lightgray;
+   width: 20%;
+   margin-bottom: 45px;
+}
+
+.highlights{
+   margin-bottom: 20px;
+}
 
 /* --------------------------------------------------------- */
 /* CUSTOM RADIO BUTTON */
