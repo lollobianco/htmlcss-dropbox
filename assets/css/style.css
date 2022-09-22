@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800;900&display=swap');
+
 *{
    margin: 0;
    padding: 0;
@@ -5,7 +7,11 @@
 }
 
 html{
-   font-family: sans-serif;
+   font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+   background-color: #B4D0E7;
 }
 
 a{
@@ -28,18 +34,28 @@ li{
 }
 
 .nav{
-   padding: 25px 5px;
+   padding: 25px 15px;
+   background-color: white;
 }
 
 .nav-item li{
    margin: 0 20px;
 }
 
-.btn{
+.btn-small{
    border: 0;
    background-color: #0061FF;
    color: white;
    padding: 7px 15px;
+   font-size: 1rem;
+   border-radius: 5px;
+}
+
+.btn-large{
+   border: 0;
+   background-color: #0061FF;
+   color: white;
+   padding: 15px 15px;
    font-size: 1rem;
    border-radius: 5px;
 }
@@ -50,4 +66,46 @@ li{
 
 .img-container img{
    margin-right: 15px;
+}
+
+.jumbotron-container{
+   padding-top: 60px;
+   width: 70%;
+   margin: 0 auto;
+}
+
+.title{
+   font-size: 5rem;
+   font-weight: 900;
+}
+
+.img-text{
+   width: 100%;
+   padding-top: 50px;
+   justify-content: space-between;
+}
+
+.jumbo-text{
+   flex-basis: 60%;
+   position: relative;
+}
+
+.jumbo-text p{
+   margin-bottom: 40px;
+}
+
+.jumbo-text button{
+   margin-bottom: 40px;
+}
+
+.jumbo-img img{
+   width: 100%;
+   flex-basis: 40%;
+   margin-bottom: -90px;
+}
+
+.jumbo-arrow{
+   position: absolute;
+   bottom: 20px;
+   font-size: 3.5rem;
 }
