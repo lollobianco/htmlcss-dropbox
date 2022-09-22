@@ -151,6 +151,20 @@ li{
    flex-basis: 30%;
    border: 1px solid lightgray;
    margin-bottom: 60px;
+   border-radius: 10px;
+}
+
+.h-plan{
+   width: 100%;
+   border: 1px solid lightgray;
+   display: flex;
+   justify-content: space-between;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+
+.h-plan .price{
+   margin-bottom: 50px;
 }
 
 .plan-type{
@@ -159,12 +173,27 @@ li{
    padding: 10px 0;
 }
 
+.plan-type-h{
+   border-top: 1px solid lightgray;
+   border-left: 1px solid lightgray;
+   border-right: 1px solid lightgray;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   padding: 10px 0;
+   text-align: center;
+}
+
+.button-h{
+   padding: 40px 40px;
+}
+
 .plan-ico{
    margin-right: 5px;
 }
 
 .description{
    padding: 40px 40px;
+   flex-basis: 70%;
 }
 
 .description h3{
