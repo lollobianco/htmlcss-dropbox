@@ -389,7 +389,6 @@ input{
 .logos-container{
    width: calc(100%/3);
    height: calc(100vw/3);
-   border: 1px solid black;
 }
 
 .logos-container.middle{
@@ -397,10 +396,9 @@ input{
    background-color: #F5F5F5;
 }
 
-.logos-container div{
+.logos-container .logo-image{
    width: 50%;
    height: calc(100vw/6);
-   border: 1px solid black;
 }
 
 .logo-image{
@@ -429,6 +427,32 @@ input{
    background-image: url("../img/topps.svg");
    background-color: #FF1C1C;
 }
+
+.img-5{
+   background-image: url("../img/world_bicycle_relief.svg");
+   background-color: #FF1C1C;
+}
+
+.img-6{
+   background-image: url("../img/hearst_corp.svg");
+   background-color: #B4D0E7;
+}
+
+.img-7{
+   background-image: url("../img/lonely_planet.svg");
+   background-color: #0D2481;
+}
+
+.img-8{
+   background-image: url("../img/clear_channel.svg");
+   background-color: #FFD830;
+}
+
 .middle-img{
    width: 50%;
+   margin-bottom: 50px;
+}
+
+.logos-container p{
+   margin-bottom: 50px;
 }
