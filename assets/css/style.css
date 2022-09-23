@@ -498,7 +498,7 @@ input{
 }
 
 
-/* FAQ SECTION */
+/* FAQ SECTION + HOVER*/
 /* ---------------------------------------------------------- */
 
 
@@ -566,5 +566,51 @@ input{
 
 .last-question-container:hover .fa-angle-right{
    display: none;
+}
+
+
+
+/* ----------------------------------------------------------- */
+/* FOOTER */
+
+
+footer{
+   background-color: black;
+   color: white;
+   padding-top: 100px;
+   padding-bottom: 30px;
+   line-height: 35px;
+}
+
+.li-title{
+   font-weight: 800;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+}
+
+footer ul{
+   margin-bottom: 100px;
+}
+
+.footer-line{
+   width: 11%;
+   border-top: 1px solid white;
+   /* margin-bottom: 40px; */
+}
+
+.language{
+   color: #999999;
+   margin-top: 30px;
+}
+
+select{
+   background-color: black;
+   color: #999999;
+   font-size: 1rem;
+   border: none;
+}
+
+option{
+   border: none;
 }
 
