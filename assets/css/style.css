@@ -350,6 +350,7 @@ input{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   margin-bottom: 120px;
 }
 
 .card{
@@ -365,4 +366,69 @@ input{
 .card div{
    font-size: 1.4rem;
    margin-bottom: 30px;
+}
+
+
+/* --------------------------------------------------------- */
+/* TEAM USING DROPBOX */
+
+
+.more{
+   color: blue;
+}
+
+.logo-flex{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.team-using-db-container{
+   margin-top: 170px;
+}
+
+.logos-container{
+   width: calc(100%/3);
+   height: calc(100vw/3);
+   border: 1px solid black;
+}
+
+.logos-container.middle{
+   padding: 50px;
+   background-color: #F5F5F5;
+}
+
+.logos-container div{
+   width: 50%;
+   height: calc(100vw/6);
+   border: 1px solid black;
+}
+
+.logo-image{
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 50%;
+}
+
+.img-1{
+   background-image: url("../img/designit-w.svg");
+   background-color: #A2D39B;
+}
+
+.img-2{
+   background-image: url("../img/arizona_state_university.svg");
+   background-color: #61082B;
+}
+
+.img-3{
+   background-image: url("../img/university_of_florida.svg");
+   background-color: #0093CE;
+   fill: white;
+}
+
+.img-4{
+   background-image: url("../img/topps.svg");
+   background-color: #FF1C1C;
+}
+.middle-img{
+   width: 50%;
 }
