@@ -410,6 +410,10 @@ input{
 .img-1{
    background-image: url("../img/designit-w.svg");
    background-color: #A2D39B;
+   border-style: inset;
+   border-top: 15px solid #D1E9CD;
+   border-bottom: 15px solid #D1E9CD;
+   border-right: 15px solid #D1E9CD;
 }
 
 .img-2{
