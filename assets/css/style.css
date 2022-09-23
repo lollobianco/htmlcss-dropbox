@@ -14,6 +14,15 @@ header{
    background-color: #B4D0E7;
    margin-bottom: 150px;
 }
+
+h2{
+   font-size: 2.5rem;
+}
+
+a{
+   color: blue;
+}
+
 .nav a{
    text-decoration: none;
    color: black;
@@ -35,6 +44,11 @@ li{
 .flex{
    display: flex;
    align-items: center;
+}
+
+.flex-col{
+   display: flex;
+   flex-direction: column;
 }
 
 
@@ -342,7 +356,7 @@ input{
 /* DROPBOX BUSINESS */
 
 .dropbox-business{
-   font-size: 2.1rem;
+   font-size: 2.5rem;
    margin-bottom: 60px;
 }
 
@@ -468,6 +482,7 @@ input{
 .section-container{
    background-color: #B4D0E7;
    padding: 120px 0;
+   margin-bottom: 150px;
 }
 
 .section-container h2{
@@ -481,3 +496,75 @@ input{
    color: black;
    padding: 15px 40px;
 }
+
+
+/* FAQ SECTION */
+/* ---------------------------------------------------------- */
+
+
+#faq{
+   padding-bottom: 150px;
+}
+
+.faq-title{
+   margin-bottom: 70px;
+}
+
+.last-question-container{
+   position: relative;
+   border-top: 2px solid lightgray;
+   border-bottom: 2px solid lightgray;
+   padding: 40px 0;
+}
+
+.question-container{
+   border-top: 2px solid lightgray;
+   padding: 40px 0;
+}
+
+.question{
+   position: relative;
+}
+
+.fa-angle-down{
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   top: 0;
+   display: none;
+}
+
+.fa-angle-right{
+   position: absolute;
+   right: 0;
+}
+
+.answer{
+   margin-top: 30px;
+   display: none;
+}
+
+.question-container:hover .answer{
+   display: block;
+}
+
+.last-question-container:hover .answer{
+   display: block;
+}
+
+.question-container:hover .fa-angle-down{
+   display: block;
+}
+
+.last-question-container:hover .fa-angle-down{
+   display: block;
+}
+
+.question-container:hover .fa-angle-right{
+   display: none;
+}
+
+.last-question-container:hover .fa-angle-right{
+   display: none;
+}
+
