@@ -10,6 +10,20 @@ html{
    font-family: 'Noto Sans', sans-serif;
 }
 
+body::-webkit-scrollbar {
+   width: 7px;
+ }
+ 
+ body::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background-color: #0061FF;    
+   border-radius: 20px;       
+ }
+
 header{
    background-color: #B4D0E7;
    margin-bottom: 150px;
@@ -30,6 +44,7 @@ a{
 
 li{
    list-style: none;
+   cursor: pointer;
 }
 
 .fa-check{
@@ -51,6 +66,13 @@ li{
    flex-direction: column;
 }
 
+.btn-small:hover{
+   background-color: #4c8ffa;
+}
+
+.btn-large:hover{
+   background-color: #4c8ffa;
+}
 
 /* --------------------------------------------------------- */
 /* HEADER NAV */
@@ -66,12 +88,15 @@ li{
    z-index: 1;
 }
 
-.nav-item li{
-   margin: 0 20px;
+.logo{
+   cursor: pointer;
 }
 
-.nav-item li:hover{
-   text-decoration: underline;
+.nav-item li{
+   position: relative;
+}
+.nav-item a{
+   padding: 0 20px;
 }
 
 .btn-small{
@@ -81,6 +106,7 @@ li{
    padding: 7px 15px;
    font-size: 1rem;
    border-radius: 5px;
+   cursor: pointer;
 }
 
 .btn-large{
@@ -90,6 +116,7 @@ li{
    padding: 15px 15px;
    font-size: 1rem;
    border-radius: 5px;
+   cursor: pointer;
 }
 
 .right-nav button{
@@ -99,6 +126,22 @@ li{
 .img-container img{
    margin-right: 15px;
 }
+
+.underline{
+   border: 1px solid black;
+   border-radius: 100px;
+   position: absolute;
+   margin-top: 52px;
+   top: 0;
+   right: 0;
+   left: 0;
+   display: none;
+}
+
+.nav-item li:hover .underline{
+   display: block;
+}
+
 
 
 /* --------------------------------------------------------- */
@@ -352,6 +395,11 @@ input{
    margin-top: 25px;
 }
 
+.partner-container .btn-large:hover{
+   background-color: lightgray;
+   border: 1px solid gray;
+}
+
 /* --------------------------------------------------------- */
 /* DROPBOX BUSINESS */
 
@@ -408,6 +456,7 @@ input{
 .logos-container.middle{
    padding: 50px;
    background-color: #F5F5F5;
+   overflow: auto;
 }
 
 .logos-container .logo-image{
@@ -495,6 +544,11 @@ input{
    background-color: white;
    color: black;
    padding: 15px 40px;
+}
+
+.section-container button:hover{
+   background-color: lightgray;
+   border: 1px solid gray;
 }
 
 
