@@ -15,8 +15,8 @@ body::-webkit-scrollbar {
  }
  
  body::-webkit-scrollbar-track {
-   -webkit-box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
-    background-color: transparent;
+   box-shadow: inset 0 0 7px rgba(0, 0, 0, 0.3);
+   background-color: transparent;
  }
  
  body::-webkit-scrollbar-thumb {
@@ -308,59 +308,40 @@ i{
 
 
 .billing{
+   display: inline-block;
    position: relative;
+   padding-right: 30px;
+   padding-left: 20px;
    cursor: pointer;
-   padding: 0 25px;
 }
 
-input{
+.billing input{
    position: absolute;
    opacity: 0;
    cursor: pointer;
+   margin-right: 50px;
 }
 
 .checkmark{
    position: absolute;
    top: 2px;
    left: 0;
-   height: 15px;
-   width: 15px;
-   border: 2px solid #D0D0D3;
+   height: 17px;
+   width: 17px;
+   background-color: white;
+   border: 2px solid lightgray;
    border-radius: 50%;
 }
 
-.billing:hover input ~ .checkmark{
+.billing input:checked ~ .checkmark {
+   background-color: white;
    border: 4px solid #0061FF;
-   border-radius: 50%;
-}
-
-.billing input:checked ~ .checkmark{
-   border: 4px solid #0061FF;
-   border-radius: 50%;
-}
-
-.checkmark:after {
-   content: "";
-   position: absolute;
-   display: none;
-}
-
-.billing input:checked ~ .checkmark:after {
-   display: block;
-}
-
-.billing .checkmark:after {
-   top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
 }
 
 .select-billing{
    margin: 50px 0;
 }
+
 
 /* --------------------------------------------------------- */
 /* PARTNER SECTION */
